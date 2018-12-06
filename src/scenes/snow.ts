@@ -1,7 +1,8 @@
-const Scene = require('../engine/scene');
-const SnowFlake = require('../assets/snowflake');
 
-class Snow extends Scene {
+import { Scene } from '../engine/scene';
+import { SnowFlake } from '../assets/snowflake';
+
+export class Snow extends Scene {
     constructor() {
       super();
       this.createSnowflakes();
@@ -24,5 +25,3 @@ class Snow extends Scene {
       requestAnimationFrame(this.updateBound);
     }
   }
-
-module.exports = Snow;

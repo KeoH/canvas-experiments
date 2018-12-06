@@ -4,17 +4,18 @@
   "description": "",
   "main": "dist/main.js",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "typescript": "^3.2.1"
   },
   "devDependencies": {
+    "browserify": "^16.2.3",
     "gulp": "^3.9.1",
-    "gulp-browser": "^3.0.11"
+    "tsify": "^4.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
     "build": "npx gulp build",
-    "watch": "npx gulp",
-    "serve": "npx gulp build && npx http-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npm run build && npx http-server"
   },
   "author": "Francisco Manzano Magaña <keoh77@gmail.com>",
   "license": "ISC"
