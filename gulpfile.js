@@ -1,7 +1,7 @@
 let gulp = require("gulp");
 let gulpBrowser = require("gulp-browser");
 
-gulp.task("compile", function() {
+gulp.task("build", function() {
   let stream = gulp
     .src("./src/main.js")
     .pipe(gulpBrowser.browserify())
@@ -10,7 +10,7 @@ gulp.task("compile", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch(["src/**/*.js"], ["compile"]);
+  gulp.watch(["src/**/*.js"], ["build"]);
 });
 
-gulp.task('default', ['compile', 'watch']);
+gulp.task('default', ['build', 'watch']);
