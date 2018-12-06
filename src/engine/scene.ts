@@ -3,7 +3,7 @@ import { GameObject } from "./gameobject";
 export class Scene {
   canvas: HTMLCanvasElement;
   ctx: CanvasRenderingContext2D;
-  drawables: any;
+  drawables: GameObject[];
   updateBound: any;
   width: number;
   height: number;
