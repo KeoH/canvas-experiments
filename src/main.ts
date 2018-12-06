@@ -1,4 +1,3 @@
-
-import { Snow } from './scenes/snow';
+import { Snow } from "./scenes/snow";
 
 new Snow();

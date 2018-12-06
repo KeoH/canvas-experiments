@@ -10,6 +10,5 @@ export class GameObject {
     this.z = z;
     this.alpha = alpha;
   }
-  update(ctx:CanvasRenderingContext2D) {}
-
+  update(ctx: CanvasRenderingContext2D) {}
 }

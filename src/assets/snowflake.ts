@@ -26,7 +26,7 @@ export class SnowFlake extends GameObject {
     this.alpha = this.randBetween(0.1, 0.9);
   }
 
-  update(ctx:CanvasRenderingContext2D) {
+  update(ctx: CanvasRenderingContext2D) {
     super.update(ctx);
     this.x += this.vx;
     this.y += this.vy;
@@ -37,7 +37,7 @@ export class SnowFlake extends GameObject {
     this.draw(ctx);
   }
 
-  draw(ctx:CanvasRenderingContext2D) {
+  draw(ctx: CanvasRenderingContext2D) {
     ctx.save();
     ctx.fillStyle = "#FFF";
     ctx.beginPath();
