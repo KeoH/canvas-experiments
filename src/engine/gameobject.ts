@@ -12,7 +12,4 @@ export class GameObject {
   }
   update(ctx:CanvasRenderingContext2D) {}
 
-  randBetween(min: number, max: number): number {
-    return min + Math.random() * (max - min);
-  }
 }

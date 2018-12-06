@@ -13,6 +13,10 @@ export class SnowFlake extends GameObject {
     this.reset();
   }
 
+  randBetween(min: number, max: number): number {
+    return min + Math.random() * (max - min);
+  }
+
   reset() {
     this.x = this.randBetween(0, window.innerWidth);
     this.y = this.randBetween(0, -window.innerHeight);

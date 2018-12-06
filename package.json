@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "npx gulp build",
-    "serve": "npm run build && npx http-server"
+    "watch": "npx gulp",
+    "serve": "npm run build && npx http-server -c-1"
   },
   "author": "Francisco Manzano Magaña <keoh77@gmail.com>",
   "license": "ISC"
