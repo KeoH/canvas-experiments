@@ -11,9 +11,9 @@
     "gulp-browser": "^3.0.11"
   },
   "scripts": {
-    "build": "gulp build",
-    "watch": "gulp",
-    "serve": "gulp build && npx http-server",
+    "build": "npx gulp build",
+    "watch": "npx gulp",
+    "serve": "npx gulp build && npx http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Francisco Manzano Magaña <keoh77@gmail.com>",
