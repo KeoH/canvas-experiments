@@ -8,13 +8,13 @@ export class Blood extends Scene {
 
   start() {
     super.start();
-    this.createSnowflakes();
+    this.createBloodDrops();
   }
 
-  createSnowflakes() {
-    const flakes = window.innerWidth / 6;
+  createBloodDrops() {
+    const drops = window.innerWidth / 6;
     this.drawables = [];
-    for (let s = 0; s < flakes; s++) {
+    for (let s = 0; s < drops; s++) {
       this.drawables.push(new BloodDrop());
     }
   }
