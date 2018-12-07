@@ -4,7 +4,7 @@ export class GameObject {
   z: number;
   alpha: number;
 
-  constructor(x: number = 0, y: number = 0, z: number = 0, alpha: number = 0) {
+  constructor(x: number = 0, y: number = 0, z: number = 0, alpha: number = 1) {
     this.x = x;
     this.y = y;
     this.z = z;

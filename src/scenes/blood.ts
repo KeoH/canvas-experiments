@@ -1,7 +1,7 @@
 import { Scene } from "../engine/scene";
-import { SnowFlake } from "../assets/snowflake";
+import { BloodDrop } from "../assets/bloodDrop";
 
-export class Snow extends Scene {
+export class Blood extends Scene {
   constructor() {
     super();
   }
@@ -12,10 +12,10 @@ export class Snow extends Scene {
   }
 
   createSnowflakes() {
-    const flakes = window.innerWidth / 4;
+    const flakes = window.innerWidth / 6;
     this.drawables = [];
     for (let s = 0; s < flakes; s++) {
-      this.drawables.push(new SnowFlake());
+      this.drawables.push(new BloodDrop());
     }
   }
 
